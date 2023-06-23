@@ -96,10 +96,10 @@ ALTER TABLE `NashvilleHousingData`
 
 
 ---------------------------------------------------------------------------------------------
---  Populate Property Adress Data
+--  Populate Property address Data
 
 /* 
-This code joins the table onto itself and allows to populate the property adress if there
+This code joins the table onto itself and allows to populate the property address if there
 are any missing entries.
 */
 
@@ -131,7 +131,7 @@ WHERE A.PropertyAddress is NULL
 LIMIT 1000
 
 UPDATE A
-SET PropertyAdress = ISNULL(A.PropertyAddress,B.PropertyAddress)
+SET Propertyaddress = ISNULL(A.PropertyAddress,B.PropertyAddress)
 FROM NashvilleHousingData A
 JOIN NashvilleHousingData B
     ON A.ParcelID = B.ParcelID
@@ -147,7 +147,7 @@ WHERE A.PropertyAddress is NULL
 
 
 ---------------------------------------------------------------------------------------------
--- Breaking out the adress into Individual Columns (Adresss, City, State)
+-- Breaking out the address into Individual Columns (addresss, City, State)
 
 SELECT PropertyAddress 
 FROM NashvilleHousingData
@@ -181,7 +181,7 @@ FROM NashvilleHousingData
 
 
 
-/* Now to add two new columns with the adress broken up between Street and City */
+/* Now to add two new columns with the address broken up between Street and City */
 
 
 ALTER TABLE `NashvilleHousingData` 
@@ -200,7 +200,7 @@ SET PropertySplitCity = SUBSTRING(PropertyAddress, POSITION(',' IN PropertyAddre
 
 
 /* 
-Now whereaas the PropertyAdress column only contained Street and City the OwnerAddress column contains Street, City
+Now whereaas the Propertyaddress column only contained Street and City the OwnerAddress column contains Street, City
 and State. So let's work on that one now...
  */
 
