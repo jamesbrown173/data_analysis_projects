@@ -200,7 +200,7 @@ SET PropertySplitCity = SUBSTRING(PropertyAddress, POSITION(',' IN PropertyAddre
 
 
 /* 
-Now whereaas the Propertyaddress column only contained Street and City the OwnerAddress column contains Street, City
+Whereas the Propertyaddress column only contained Street and City the OwnerAddress column contains Street, City
 and State. So let's work on that one now...
  */
 
