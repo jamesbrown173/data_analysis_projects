@@ -88,7 +88,7 @@ ALTER TABLE `NashvilleHousingData`
 UPDATE NashvilleHousingData
 SET SaleDateConverted = CONVERT(SaleDate,DATE)
 
-/* Or you could have used the CHANGE Funciton below to change the original column */
+/* Or you could have used the CHANGE Function below to change the original column */
 
 ALTER TABLE `NashvilleHousingData` 
 	CHANGE `SaleDate` `SaleDate` date 
