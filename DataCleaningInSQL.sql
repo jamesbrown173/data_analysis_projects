@@ -147,7 +147,7 @@ WHERE A.PropertyAddress is NULL
 
 
 ---------------------------------------------------------------------------------------------
--- Breaking out the address into Individual Columns (addresss, City, State)
+-- Breaking out the address into Individual Columns (address, City, State)
 
 SELECT PropertyAddress 
 FROM NashvilleHousingData
