@@ -1,4 +1,4 @@
-/* COVID-19 Data Exploratoin
+/* COVID-19 Data Exploration
 
 Skills used: Create tables, import data into table, Joins, CTE's, Temple Tables, Aggregate Functions, Creating Views
 
@@ -8,7 +8,7 @@ Skills used: Create tables, import data into table, Joins, CTE's, Temple Tables,
 
 /* 
 
-I'm going to be using two seperate datasets. Here I am creating the tables for each dataset.
+I'm going to be using two separate datasets. Here I am creating the tables for each dataset.
 
 */
 
