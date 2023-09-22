@@ -1,6 +1,6 @@
 --COVID-19 Data Exploration
 
---Skills used: Create tables, import data into table, Joins, CTE's, Temple Tables, Aggregate Functions, Creating Views
+--Skills used: Create tables, import data into table, Joins, CTE's, Temporary Tables, Aggregate Functions, Creating Views
 
 
 ---------------------------------------------------------------------------------------------
