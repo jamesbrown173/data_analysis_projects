@@ -12,8 +12,8 @@ from itemadapter import is_item, ItemAdapter
 class ProxyMiddleware:
     def process_request(self, request, spider):
         # Update the proxy settings based on your proxy URL
-        username = 'spbqg9rnf6'
-        password = '3LJurt078hzbRbNmfa'
+        username = 'OMITTED'
+        password = 'OMITTED'
         proxy_url = f"http://{username}:{password}@gate.smartproxy.com:10000"
         request.meta['proxy'] = proxy_url
 
