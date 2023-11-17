@@ -6,16 +6,16 @@ import pprint
 
 class FrenchSpiderSpider(scrapy.Spider):
     name = "french_spider"
-    allowed_domains = ["bibliographienumeriquedhistoiredudroit-ifg.univ-lorraine.fr"]
+    allowed_domains = ["WEBSITE_OMITTED"]
 
     # Proxy settings
     custom_settings = {
         'DOWNLOADER_MIDDLEWARES': {
-            'french_website.middlewares.ProxyMiddleware': 543,  # Adjust the priority as needed
+            'client_website.middlewares.ProxyMiddleware': 543,  # Adjust the priority as needed
         },
     }
     # Adjust the range based on your requirements
-    start_urls = [f"https://bibliographienumeriquedhistoiredudroit-ifg.univ-lorraine.fr/s/droit/item/{i}" for i in range(1, 999999)]
+    start_urls = [f"WEBSITE_OMITTED{i}" for i in range(1, 999999)]
 
 
     def parse(self, response):
@@ -62,6 +62,3 @@ class FrenchSpiderSpider(scrapy.Spider):
         # You can also yield the dictionary if you want to store the data or continue processing
         yield page_profile_dict
 
-
-
-# https://bibliographienumeriquedhistoiredudroit-ifg.univ-lorraine.fr/s/droit/item?sort_by=dcterms%3Adate&sort_order=desc&fulltext_search=1920
